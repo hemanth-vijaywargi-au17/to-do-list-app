@@ -10,7 +10,7 @@ const PORT = process.env.PORT || 2000;
 const buildFolderPath = resolve(__dirname, "./build");
 app.use(express.static(buildFolderPath));
 
-// React Router
+// All Routes go to index.html
 app.get("*", (req, res) => {
   res.sendFile(`${buildFolderPath}/index.html`);
 });
