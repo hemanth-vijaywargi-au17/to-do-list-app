@@ -11,7 +11,6 @@
     "react": "^17.0.2",
     "react-dom": "^17.0.2",
     "react-scripts": "5.0.0",
-    "recoil": "^0.5.2",
     "uuid": "^8.3.2",
     "web-vitals": "^0.2.4",
     "workbox-background-sync": "^5.1.4",
@@ -28,7 +27,7 @@
     "workbox-streams": "^5.1.4"
   },
   "scripts": {
-    "start": "node server.js",
+    "start": "react-scripts start",
     "build": "react-scripts build",
     "test": "react-scripts test",
     "eject": "react-scripts eject"

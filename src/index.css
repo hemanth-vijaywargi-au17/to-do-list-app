@@ -7,5 +7,13 @@ body {
 }
 
 textarea:focus-visible {
-    outline: hsl(39,100%,70%) auto 1px;
+    outline: hsl(39, 100%, 70%) auto 1px;
+}
+
+.list-item {
+    @apply flex justify-between items-center gap-2 flex-wrap md:flex-nowrap;
+}
+
+.list-item-text {
+    @apply w-full md:w-auto grow bg-lavender p-2 text-gray-700 rounded text-xl;
 }

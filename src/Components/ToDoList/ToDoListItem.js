@@ -6,7 +6,7 @@ function ToDoListItem(props) {
   const [editMode, setEditMode] = useState(false);
 
   return (
-    <div className="flex justify-between items-center gap-2 flex-wrap md:flex-nowrap">
+    <div className="list-item">
       {editMode ? (
         <textarea
           type="text"
@@ -14,14 +14,15 @@ function ToDoListItem(props) {
           onChange={(e) => {
             setInput(e.target.value);
           }}
-          className="w-full md:w-auto grow border-2 border-gray-400 rounded bg-blue-100 p-2 text-xl"
+          className="list-item-text border-2 border-gray-400"
           autoFocus
           onFocus={(e) => {
             e.target.setSelectionRange(input.length, input.length);
           }}
+          spellcheck="false"
         ></textarea>
       ) : (
-        <span className="w-full md:w-auto grow bg-lavender p-2 rounded text-gray-700 text-xl">
+        <span className="list-item-text">
           {input}
         </span>
       )}

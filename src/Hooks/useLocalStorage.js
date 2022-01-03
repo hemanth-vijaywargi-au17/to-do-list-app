@@ -6,7 +6,7 @@ function useLocalStorage(key, defaultValue) {
 
   let localStorageValue = localStorage.getItem(key);
   const [storageValue, setStorageValue] = useState(
-    localStorageValue ? JSON.parse(localStorageValue) : null || defaultValue
+    localStorageValue ? JSON.parse(localStorageValue) : defaultValue
   );
 
   useEffect(() => {
